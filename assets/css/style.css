@@ -48,19 +48,11 @@ body {
     box-shadow: 0 30px 60px #0000001a;
 }
 
-.card_header {
-
-}
-
 .card_header h1 {
     font-size: 3.5rem;
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.card_header h1 span {
-
 }
 
 .card_accordion_box {
@@ -76,7 +68,6 @@ body {
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(211, 211, 211, .4);
-    cursor: pointer;
 }
 
 .accordion:first-child {
@@ -92,19 +83,11 @@ body {
     align-items: center;
     font-size: 1.12rem;
     font-weight: 600;
-    transition: .2s;
+    cursor: pointer;
 }
 
 .accordion-label:hover {
     color: #ad28eb;
-}
-
-.accordion-label span {
-
-}
-
-.accordion:first-child .accordion-response {
-    display: block;
 }
 
 .accordion-response {
@@ -114,7 +97,6 @@ body {
     line-height: 22px;
     display: none;
 }
-
 
 .accordion.active .accordion-response {
     display: block;
