@@ -1,0 +1,137 @@
+:root {
+    --color1: hsl(0, 0%, 100%); /* White */
+    --color2: hsl(275, 100%, 97%); /* Light pink */
+    --color3: hsl(292, 16%, 49%); /* Grayish purple */
+    --color4: hsl(292, 42%, 14%); /* Dark purple */
+}
+
+/* font-family: "Work Sans", sans-serif; */
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: "Work Sans", sans-serif;
+    color: var(--color4);
+}
+
+.bckg-img {
+    background: url("../images/background-pattern-desktop.svg");
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    background: var(--color1);
+    padding: 36px;
+    border-radius: 15px;
+    z-index: 100;
+    box-shadow: 0 30px 60px #0000001a;
+}
+
+.card_header {
+
+}
+
+.card_header h1 {
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card_header h1 span {
+
+}
+
+.card_accordion_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    cursor: pointer;
+}
+
+.accordion:first-child {
+    margin-top: 0;
+}
+.accordion:last-child {
+    border: none;
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.12rem;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.accordion-label:hover {
+    color: #ad28eb;
+}
+
+.accordion-label span {
+
+}
+
+.accordion:first-child .accordion-response {
+    display: block;
+}
+
+.accordion-response {
+    font-size: 1.02rem;
+    font-weight: 300;
+    color: var(--color3);
+    line-height: 22px;
+    display: none;
+}
+
+
+.accordion.active .accordion-response {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .bckg-img {
+        background: url("../images/background-pattern-mobile.svg");
+        background-position: center;
+        background-size: cover;
+    }
+    .container {
+        margin: 0 25px;
+        padding: 50px 0;
+    }
+    .card {
+        padding: 40px;
+        border-radius: 10px;
+    }
+}
