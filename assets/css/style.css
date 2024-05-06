@@ -95,12 +95,27 @@ body {
     font-weight: 300;
     color: var(--color3);
     line-height: 22px;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
 }
 
 .accordion.active .accordion-response {
-    display: block;
+    height: 100px;
 }
+
+.icon-minus {
+    display: none;
+}
+
+.accordion.active .icon-plus {
+    display: none;
+}
+
+.accordion.active .icon-minus {
+    display: block
+}
+
 
 @media screen and (max-width: 768px) {
     .bckg-img {
