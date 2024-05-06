@@ -131,4 +131,10 @@ body {
         padding: 40px;
         border-radius: 10px;
     }
+    .accordion.active .accordion-response {
+        height: 150px;
+    }
+    .accordion.active:first-child .accordion-response {
+        height: 175px;
+    }
 }
