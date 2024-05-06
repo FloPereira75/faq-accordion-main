@@ -84,9 +84,14 @@ body {
     align-items: center;
     font-size: 1.12rem;
     font-weight: 600;
+    transition: .4s;
 }
 
 .accordion-label:hover {
+    color: #ad28eb;
+}
+
+.accordion.active .accordion-label {
     color: #ad28eb;
 }
 
