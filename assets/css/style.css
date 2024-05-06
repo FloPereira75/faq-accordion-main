@@ -18,6 +18,7 @@ body {
     min-height: 100vh;
     font-family: "Work Sans", sans-serif;
     color: var(--color4);
+    background: var(--color2);
 }
 
 .bckg-img {
